@@ -1,242 +1,140 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TeaTask Official</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#0d1b3d;
-color:#fff;
-}
-
-.container{
-width:100%;
-max-width:430px;
-margin:auto;
-padding-bottom:30px;
-}
-
-.banner{
-width:100%;
-overflow:hidden;
-}
-
-.banner img{
-width:100%;
-display:block;
-border-bottom-left-radius:18px;
-border-bottom-right-radius:18px;
-}
-
-.download-card{
-background:#182a59;
-margin:18px;
-padding:20px;
-border-radius:18px;
-box-shadow:0 8px 20px rgba(0,0,0,.35);
-text-align:center;
-}
-
-.download-card h1{
-font-size:30px;
-margin-bottom:10px;
-color:#FFD54F;
-}
-
-.download-card p{
-font-size:17px;
-line-height:28px;
-color:#ddd;
-}
-
-.download-btn{
-display:block;
-margin-top:20px;
-padding:17px;
-border-radius:14px;
-background:linear-gradient(90deg,#ff9800,#ff5722);
-color:#fff;
-font-size:22px;
-font-weight:bold;
-text-decoration:none;
-transition:.3s;
-}
-
-.download-btn:hover{
-transform:scale(1.03);
-}
-
-.section-title{
-font-size:28px;
-font-weight:bold;
-margin:20px 18px;
-color:#FFD54F;
-}
-
-.card{
-background:#182a59;
-margin:18px;
-padding:18px;
-border-radius:16px;
-box-shadow:0 8px 20px rgba(0,0,0,.30);
-}
-
-.card h2{
-font-size:24px;
-color:#FFB300;
-margin-bottom:10px;
-}
-
-.card p{
-font-size:17px;
-line-height:32px;
-color:#eee;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div class="container">
-
 <div class="banner">
-<img src="file_0000000056bc8208b90758236a8fb11b.png">
+    <img src="file_0000000056bc8208b90758236a8fb11b.png" alt="TeaTask Banner">
 </div>
 
 <div class="download-card">
 
-<h1>Download TeaTask</h1>
+    <h1>Download TeaTask</h1>
 
-<p>
-Daily Task • Daily Income • Referral Income
-</p>
+    <p>
+        Daily Task • Daily Income • Referral Income
+    </p>
 
-<a class="download-btn"
-href="https://raw.githubusercontent.com/bimanmondal5858-hue/TeaTask/main/base.apk">
-⬇ Download APK
-</a>
+    <a class="download-btn"
+        href="https://raw.githubusercontent.com/bimanmondal5858-hue/TeaTask/main/base.apk">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 16V3M12 16L7 11M12 16L17 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 21H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Download APK
+    </a>
 
 </div>
+
+<!-- ***** UPDATED PLAY STORE STATUS CARD ***** -->
+<div class="playstore-status" style="color: #22c55e;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award">
+        <circle cx="12" cy="8" r="7"></circle>
+        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.89"></polyline>
+    </svg>
+    <span>Available Google Play Store</span>
+</div>
+<!-- *************************************** -->
 
 <h2 class="section-title">
-Why Join TeaTask?
+    Why Join TeaTask?
 </h2>
 
- <div class="card">
-
-<h2>💰 Daily Income</h2>
-
-<p>
-
-✅ Daily Task<br>
-✅ Daily Income<br>
-✅ Referral Income<br>
-✅ Unlimited Earnings
-
-</p>
-
+<div class="card">
+    <h2>Daily Income</h2>
+    <ul class="feature-list">
+        <li>Daily Task</li>
+        <li>Daily Income</li>
+        <li>Referral Income</li>
+        <li>Unlimited Earnings</li>
+    </ul>
 </div>
 
 <div class="card">
-
-<h2>📧 Earn More Money</h2>
-
-<p>
-
-✅ Create Unlimited Gmail<br>
-✅ Complete Daily Tasks<br>
-✅ Get More Coins<br>
-✅ Daily Bonus Available
-
-</p>
-
+    <h2>Earn More Money</h2>
+    <ul class="feature-list">
+        <li>Create Unlimited Gmail</li>
+        <li>Complete Daily Tasks</li>
+        <li>Get More Coins</li>
+        <li>Daily Bonus Available</li>
+    </ul>
 </div>
 
-<div class="card" style="background:linear-gradient(135deg,#ff9800,#ff5722);text-align:center;">
-
-<h2 style="color:#fff;">🎁 Sign Up Bonus</h2>
-
-<h1 style="font-size:48px;color:#fff;margin:15px 0;">
-
-₹30
-
-</h1>
-
-<p style="font-size:22px;color:#fff;">
-
-Minimum Withdrawal ₹50
-
-</p>
-
+<div class="card bonus-card">
+    <h2>Sign Up Bonus</h2>
+    <div class="bonus-content">
+        <div class="bonus-item">
+            <span class="bonus-value">₹30</span>
+            <span class="bonus-label">Sign Up</span>
+        </div>
+        <div class="or-divider">|</div>
+        <div class="bonus-item">
+            <span class="bonus-value">₹50</span>
+            <span class="bonus-label">Min. Withdraw</span>
+        </div>
+    </div>
 </div>
 
 <div class="card">
-
-<h2>🚀 TeaTask Features</h2>
-
-<p>
-
-✅ Without Investment<br>
-✅ Instant Withdrawal<br>
-✅ Safe & Secure<br>
-✅ Daily Bonus<br>
-✅ Fast Support
-
-</p>
-
+    <h2>TeaTask Features</h2>
+    <ul class="feature-list">
+        <li>Safe and secure investment</li>
+        <li>Instant Withdrawal</li>
+        <li>Safe & Secure (Platform)</li>
+        <li>Daily Bonus</li>
+        <li>Fast Support</li>
+    </ul>
 </div>
+
+<!-- ***** APP INFORMATION CARD RESTORED & UPDATED ***** -->
+<div class="card">
+    <h2>App Information</h2>
+    <p>
+        Version : 1.0.0<br>
+        Size : 30 MB<br>
+        Platform : Google Play Store<br>
+        Developer : TeaTask Team
+    </p>
+</div>
+<!-- ************************************************ -->
 
 <div class="card">
-
-<h2>📱 App Information</h2>
-
-<p>
-
-Version : 1.0.0<br>
-Size : 30 MB<br>
-Platform : Android<br>
-Developer : TeaTask Team
-
-</p>
-
+    <h2>Important Notice</h2>
+    <p>
+        If installation is blocked,<br>
+        Go to Android Settings → Install Unknown Apps<br>
+        Then install TeaTask APK.
+    </p>
 </div>
 
-<div class="card">
+<!-- ***** DEVELOPER CREDIT WITH ANIMATION ***** -->
+<div class="developer-credit animated-developer">
+    Developer: TeaTask Official Team
+</div>
+<!-- ********************************************* -->
 
-<h2>⚠️ Important Notice</h2>
-
-<p>
-
-If installation is blocked,<br>
-
-Go to Android Settings → Install Unknown Apps<br>
-
-Then install TeaTask APK.
-
-</p>
-
+<div class="footer">
+    © 2026 TeaTask. All Rights Reserved.
 </div>
 
-<div style="text-align:center;padding:25px;color:#bbb;font-size:15px;">
+<style>
+.animated-developer {
+    padding: 12px 20px;
+    margin: 20px auto;
+    width: fit-content;
+    border: 1px solid #22c55e;
+    border-radius: 12px;
+    background: rgba(34, 197, 94, 0.08);
+    color: #22c55e;
+    font-weight: 600;
+    text-align: center;
+    animation: developerPulse 2s infinite ease-in-out;
+}
 
-© 2026 TeaTask. All Rights Reserved.
+@keyframes developerPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(34, 197, 94, 0);
+    }
 
-</div>
-
-</div>
-
-</body>
-
-</html> 
+    50% {
+        transform: scale(1.03);
+        box-shadow: 0 0 15px rgba(34, 197, 94, 0.25);
+    }
+}
+</style>
