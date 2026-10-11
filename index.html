@@ -17,8 +17,8 @@
     }
 
     body{
-        background: #0d1117;
-        color:#fff;
+        background: #F4EBE1; /* ৩ নম্বর ছবির সাথে মিলিয়ে হালকা অফ-হোয়াইট বা ব্যাকগ্রাউন্ড কালার */
+        color:#222;
         min-height: 100vh;
     }
 
@@ -29,15 +29,20 @@
         padding-bottom:30px;
     }
 
+    /* ব্যানার ইমেজ এর চারপাশে কালো ব্যাকগ্রাউন্ড এবং বর্ডার */
+    .banner-wrapper {
+        background: #000000;
+        padding: 12px;
+        margin: 0;
+        border-bottom: 3px solid #000000;
+    }
+
     .banner{
         width:100%;
-        background: #161b22;
-        min-height: 180px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
+        overflow:hidden;
         position: relative;
+        border-radius: 12px;
+        background: #000000;
     }
 
     .banner img{
@@ -47,30 +52,31 @@
     }
 
     .download-card{
-        background: #161b22;
-        margin:-25px 16px 20px 16px;
+        background: #ffffff;
+        margin:-15px 16px 20px 16px;
         padding:30px;
         border-radius:24px;
-        box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+        box-shadow: 0 10px 40px rgba(0,0,0,0.1);
         text-align:center;
         position: relative;
-        border: 1px solid #30363d;
+        border: 1px solid #e0e0e0;
     }
 
     .download-card h1{
         font-size:30px;
         margin-bottom:8px;
-        color: #58a6ff;
+        color: #FF6F00; /* কমলা কালার */
         font-weight: 800;
     }
 
     .download-card p{
         font-size:15px;
         line-height:24px;
-        color:#8b949e;
-        font-weight: 300;
+        color:#555;
+        font-weight: 400;
     }
 
+    /* কমলা কালারের ডাউনলোড বাটন */
     .download-btn{
         display:flex;
         align-items:center;
@@ -79,33 +85,33 @@
         margin-top:22px;
         padding:18px;
         border-radius:16px;
-        background: #238636;
+        background: #FF6F00; /* কমলা কালার */
         color:#fff;
         font-size:18px;
         font-weight:700;
         text-decoration:none;
         transition:all .3s ease;
-        box-shadow: 0 6px 20px rgba(35, 134, 54, 0.4);
+        box-shadow: 0 6px 20px rgba(255, 111, 0, 0.4);
     }
 
     .download-btn:hover{
-        background: #2ea043;
+        background: #E65100;
         transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(46, 160, 67, 0.6);
+        box-shadow: 0 8px 25px rgba(230, 81, 0, 0.6);
     }
 
     .status-box{
-        background: #161b22;
+        background: #ffffff;
         margin: 0 16px 20px 16px;
         padding: 14px;
         border-radius: 16px;
         text-align: center;
-        border: 1px solid #30363d;
+        border: 1px solid #e0e0e0;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
-        color: #3fb950;
+        color: #2e7d32;
         font-weight: 700;
         font-size: 14px;
     }
@@ -114,24 +120,25 @@
         font-size:20px;
         font-weight:700;
         margin:25px 16px 12px 16px;
-        color:#58a6ff;
+        color: #FF6F00; /* কমলা কালার */
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
 
     .card{
-        background: #161b22;
+        background: #ffffff;
         margin:0 16px 16px 16px;
         padding:22px;
         border-radius:18px;
-        border: 1px solid #30363d;
+        border: 1px solid #e0e0e0;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.03);
     }
 
     .card h2{
         font-size:18px;
-        color:#fff;
+        color:#222;
         margin-bottom:12px;
-        font-weight: 600;
+        font-weight: 700;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -140,7 +147,7 @@
     .card p{
         font-size:15px;
         line-height:26px;
-        color:#c9d1d9;
+        color:#555;
         font-weight: 400;
     }
 
@@ -152,7 +159,7 @@
         position: relative;
         padding-left: 30px;
         margin-bottom: 8px;
-        color: #c9d1d9;
+        color: #444;
         font-size: 15px;
     }
 
@@ -160,20 +167,20 @@
         content: '✔';
         position: absolute;
         left: 0;
-        color: #3fb950;
+        color: #FF6F00; /* কমলা কালার */
         font-weight: bold;
     }
 
     .bonus-card{
-        background: linear-gradient(135deg, #161b22 100%, #1f6feb22 0%);
+        background: linear-gradient(135deg, #ffffff 100%, #fff8e1 0%);
         text-align:center;
         padding:26px !important;
-        border: 2px solid #1f6feb !important;
-        box-shadow: 0 10px 30px rgba(31, 111, 235, 0.15);
+        border: 2px solid #FF6F00 !important; /* কমলা কালার বর্ডার */
+        box-shadow: 0 10px 30px rgba(255, 111, 0, 0.1);
     }
 
     .bonus-card h2{
-        color:#58a6ff !important;
+        color:#FF6F00 !important; /* কমলা কালার */
         justify-content: center;
         text-transform: uppercase;
         margin-bottom: 16px !important;
@@ -194,14 +201,14 @@
 
     .bonus-value {
         font-size:42px;
-        color:#fff;
+        color:#FF6F00; /* কমলা কালার */
         font-weight: 800;
         line-height: 1;
     }
 
     .bonus-label {
         font-size:13px;
-        color:#58a6ff;
+        color:#444;
         margin-top: 6px;
         text-transform: uppercase;
         font-weight: 600;
@@ -209,42 +216,34 @@
 
     .or-divider {
         font-size: 22px;
-        color: #484f58;
+        color: #ccc;
         align-self: center;
     }
 
     .support-box {
-        background: #0d1117;
+        background: #f9f9f9;
         padding: 14px;
         border-radius: 12px;
         margin-top: 10px;
-        border: 1px dashed #30363d;
+        border: 1px dashed #ddd;
         text-align: center;
     }
 
     .support-box span {
         display: block;
-        color: #3fb950;
+        color: #FF6F00; /* কমলা কালার */
         font-weight: 700;
-        font-size: 14px;
-        margin-bottom: 4px;
-    }
-
-    .support-box a {
-        color: #58a6ff;
-        text-decoration: none;
-        font-weight: 600;
         font-size: 15px;
     }
 
     .footer{
         text-align:center;
         padding:20px;
-        color:#8b949e;
+        color:#666;
         font-size:12px;
         font-weight: 300;
-        background: #090d16;
-        border-top: 1px solid #21262d;
+        background: #eae0d0;
+        border-top: 1px solid #ddd;
         margin-top: 20px;
     }
 
@@ -255,9 +254,11 @@
 
 <div class="container">
 
-    <div class="banner">
-        <!-- যদি ছবিটি নেটলিফাইয়ে আপলোড করা না থাকে, তবে ওয়েবসাইট ক্র্যাশ বা কালো না হয়ে এই ব্যাকআপ টেক্সট দেখাবে -->
-        <img src="file_00000000af2082099479a8aebbb5719b.png" alt="Nuvexa Earn Banner" onerror="this.style.display='none'; this.parentElement.innerHTML='<h2 style=\'color:#58a6ff; font-size:24px; padding:30px; text-align:center;\'>Nuvexa Earn Official</h2>';">
+    <!-- ছবির চারপাশে কালো ব্যাকগ্রাউন্ড ফিক্স -->
+    <div class="banner-wrapper">
+        <div class="banner">
+            <img src="file_00000000af2082099479a8aebbb5719b.png" alt="Nuvexa Earn Banner">
+        </div>
     </div>
 
     <div class="download-card">
@@ -319,7 +320,6 @@
         <p>We are here to help you grow and earn safely without any hassle.</p>
         <div class="support-box">
             <span>⚡ Digital 24/7 Support</span>
-            <a href="mailto:nuvexaappsupport@gmail.com">nuvexaappsupport@gmail.com</a>
         </div>
     </div>
 
@@ -333,7 +333,7 @@
 
     <div class="footer">
         <p>Developer: Nuvexa Official Team</p>
-        <p style="margin-top: 4px; color: #58a6ff; font-weight: 600;">Sponsored by BM GROUP PRIVATE LIMITED</p>
+        <p style="margin-top: 4px; color: #FF6F00; font-weight: 600;">Sponsored by BM GROUP PRIVATE LIMITED</p>
         <p style="margin-top: 8px;">© 2026 Nuvexa Earn. All Rights Reserved.</p>
     </div>
 
