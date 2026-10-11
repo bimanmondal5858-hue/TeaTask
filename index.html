@@ -1,12 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>TeaTask Official - Premium Edition</title>
+<title>Nuvexa Earn - Official Platform</title>
 
 <style>
-
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
 
     *{
@@ -18,7 +18,7 @@
     }
 
     body{
-        background: #121212;
+        background: #0d1117;
         color:#fff;
         min-height: 100vh;
     }
@@ -42,27 +42,27 @@
     }
 
     .download-card{
-        background: #1e1e1e;
+        background: #161b22;
         margin:-25px 16px 20px 16px;
         padding:30px;
         border-radius:24px;
-        box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+        box-shadow: 0 10px 40px rgba(0,0,0,0.6);
         text-align:center;
         position: relative;
-        border: 1px solid #333;
+        border: 1px solid #30363d;
     }
 
     .download-card h1{
-        font-size:32px;
-        margin-bottom:10px;
-        color: #FFC107;
+        font-size:30px;
+        margin-bottom:8px;
+        color: #58a6ff;
         font-weight: 800;
     }
 
     .download-card p{
-        font-size:16px;
-        line-height:26px;
-        color:#b0b0b0;
+        font-size:15px;
+        line-height:24px;
+        color:#8b949e;
         font-weight: 300;
     }
 
@@ -71,92 +71,71 @@
         align-items:center;
         justify-content:center;
         gap: 12px;
-        margin-top:25px;
+        margin-top:22px;
         padding:18px;
         border-radius:16px;
-        background: #FFC107;
-        color:#000;
-        font-size:20px;
+        background: #238636;
+        color:#fff;
+        font-size:18px;
         font-weight:700;
         text-decoration:none;
         transition:all .3s ease;
-        box-shadow: 0 6px 20px rgba(255, 193, 7, 0.3);
+        box-shadow: 0 6px 20px rgba(35, 134, 54, 0.4);
     }
 
     .download-btn:hover{
-        background: #FFCA28;
-        transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(255, 193, 7, 0.5);
+        background: #2ea043;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(46, 160, 67, 0.6);
     }
 
-    /* Play Store Status Card (Green for AVAILABLE) */
-    .playstore-status{
-        background: #1e1e1e;
+    .status-box{
+        background: #161b22;
         margin: 0 16px 20px 16px;
-        padding: 15px;
+        padding: 14px;
         border-radius: 16px;
         text-align: center;
-        border: 1px solid #333;
+        border: 1px solid #30363d;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
-        color: #4CAF50;
+        color: #3fb950;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .section-title{
-        font-size:24px;
+        font-size:20px;
         font-weight:700;
-        margin:25px 16px 15px 16px;
-        color:#FFC107;
+        margin:25px 16px 12px 16px;
+        color:#58a6ff;
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
 
     .card{
-        background: #1e1e1e;
+        background: #161b22;
         margin:0 16px 16px 16px;
-        padding:24px;
-        border-radius:20px;
-        border: 1px solid #333;
-        transition: transform 0.2s ease;
-    }
-
-    .card:hover {
-        border-color: #444;
+        padding:22px;
+        border-radius:18px;
+        border: 1px solid #30363d;
     }
 
     .card h2{
-        font-size:20px;
+        font-size:18px;
         color:#fff;
-        margin-bottom:15px;
+        margin-bottom:12px;
         font-weight: 600;
         display: flex;
         align-items: center;
         gap: 10px;
     }
 
-    .card h2::before {
-        content: '';
-        display: inline-block;
-        width: 22px;
-        height: 22px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        filter: brightness(0) invert(1);
-    }
-
-    .card:nth-of-type(2) h2::before { background-image: url('https://img.icons8.com/?size=100&id=82167&format=png&color=000000'); } /* Wallet icon */
-    .card:nth-of-type(4) h2::before { background-image: url('https://img.icons8.com/?size=100&id=119017&format=png&color=000000'); } /* Features icon */
-    .card:nth-of-type(5) h2::before { background-image: url('https://img.icons8.com/?size=100&id=13074&format=png&color=000000'); } /* Phone icon for App Info */
-    .card:nth-of-type(6) h2::before { background-image: url('https://img.icons8.com/?size=100&id=12234&format=png&color=000000'); } /* Warning icon */
-
     .card p{
-        font-size:16px;
-        line-height:30px;
-        color:#e0e0e0;
+        font-size:15px;
+        line-height:26px;
+        color:#c9d1d9;
         font-weight: 400;
     }
 
@@ -166,42 +145,40 @@
 
     .feature-list li {
         position: relative;
-        padding-left: 35px;
+        padding-left: 30px;
         margin-bottom: 8px;
+        color: #c9d1d9;
+        font-size: 15px;
     }
 
     .feature-list li::before {
         content: '✔';
         position: absolute;
         left: 0;
-        color: #4CAF50;
+        color: #3fb950;
         font-weight: bold;
     }
 
     .bonus-card{
-        background: linear-gradient(135deg, #212121 0%, #333333 100%);
+        background: linear-gradient(135deg, #161b22 100%, #1f6feb22 0%);
         text-align:center;
-        padding:30px !important;
-        position: relative;
-        border: 2px solid #FFC107 !important;
-        box-shadow: 0 10px 30px rgba(255, 193, 7, 0.2);
+        padding:26px !important;
+        border: 2px solid #1f6feb !important;
+        box-shadow: 0 10px 30px rgba(31, 111, 235, 0.15);
     }
 
     .bonus-card h2{
-        color:#FFC107 !important;
-        font-size: 22px;
+        color:#58a6ff !important;
         justify-content: center;
         text-transform: uppercase;
-        margin-bottom: 20px !important;
+        margin-bottom: 16px !important;
     }
-
-    .bonus-card h2::before { display: none; }
 
     .bonus-content {
         display: flex;
         justify-content: center;
         gap: 30px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     .bonus-item {
@@ -211,163 +188,5 @@
     }
 
     .bonus-value {
-        font-size:48px;
+        font-size:42px;
         color:#fff;
-        font-weight: 800;
-        line-height: 1;
-    }
-
-    .bonus-label {
-        font-size:14px;
-        color:#FFC107;
-        margin-top: 8px;
-        text-transform: uppercase;
-    }
-
-    .or-divider {
-        font-size: 24px;
-        color: #777;
-        align-self: center;
-        font-weight: 300;
-    }
-
-    /* Developer Credit Text (Added) */
-    .developer-credit {
-        text-align: center;
-        color: #777;
-        font-size: 13px;
-        font-weight: 300;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .footer{
-        text-align:center;
-        padding:10px 25px 30px 25px;
-        color:#555;
-        font-size:11px;
-        font-weight: 300;
-        background: #181818;
-    }
-
-</style>
-
-</head>
-
-<body>
-
-<div class="container">
-
-    <div class="banner">
-        <!-- Original image source retained -->
-        <img src="file_00000000dcdc8211adf61b5f59f6f36b.png" alt="TeaTask Banner">
-    </div>
-
-    <div class="download-card">
-
-        <h1>Download TeaTask</h1>
-
-        <p>
-            Daily Task • Daily Income • Referral Income
-        </p>
-
-        <a class="download-btn"
-            href="https://raw.githubusercontent.com/bimanmondal5858-hue/TeaTask/main/base.apk">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 16V3M12 16L7 11M12 16L17 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M21 21H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            Download APK
-        </a>
-
-    </div>
-
-    <!-- Green Status Card for Play Store Available -->
-    <div class="playstore-status">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.89"></polyline></svg>
-        <span>AVAILABLE ON GOOGLE PLAY STORE </span>
-    </div>
-
-    <h2 class="section-title">
-        Why Join TeaTask?
-    </h2>
-
-     <div class="card">
-        <h2>Daily Income</h2>
-        <ul class="feature-list">
-            <li>Daily Task</li>
-            <li>Daily Income</li>
-            <li>Referral Income</li>
-            <li>Unlimited Earnings</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h2>Earn More Money</h2>
-        <ul class="feature-list">
-            <li>Create Unlimited Gmail</li>
-            <li>Complete Daily Tasks</li>
-            <li>Get More Coins</li>
-            <li>Daily Bonus up to ₹50</li>
-        </ul>
-    </div>
-
-    <div class="card bonus-card">
-        <h2>Sign Up Bonus</h2>
-        <div class="bonus-content">
-            <div class="bonus-item">
-                <span class="bonus-value">₹30</span>
-                <span class="bonus-label">Sign Up</span>
-            </div>
-            <div class="or-divider">|</div>
-            <div class="bonus-item">
-                <span class="bonus-value">₹50</span>
-                <span class="bonus-label">Min. Withdraw</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <h2>TeaTask Features</h2>
-        <ul class="feature-list">
-            <!-- Replaced text as requested -->
-            <li>Safe and secure investment</li>
-            <li>Instant Withdrawal</li>
-            <li>Safe & Secure (Platform)</li>
-            <li>Daily Bonus</li>
-            <li>Fast Support</li>
-        </ul>
-    </div>
-
-    <!-- App Information Card Restored & Platform Updated -->
-    <div class="card">
-        <h2>App Information</h2>
-        <p>
-            Platform : Google Play Store and Chrome<br> <!-- Text updated here -->
-            Developer : TeaTask official Team
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>Important Notice</h2>
-        <p>
-            If installation is blocked,<br>
-            Go to Android Settings → Install Unknown Apps<br>
-            Then install TeaTask APK.
-        </p>
-    </div>
-
-    <!-- Developer Credit Text Added Here -->
-    <div class="developer-credit">
-        Developer: TeaTask Official Team
-    </div>
-
-    <div class="footer">
-        © 2026 TeaTask. All Rights Reserved.
-    </div>
-
-</div>
-
-</body>
-
-</html>
